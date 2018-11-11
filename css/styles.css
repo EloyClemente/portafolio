@@ -1,0 +1,221 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch; }
+
+ul, li {
+  list-style: none; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+input[type="submit"],
+input[type="button"],
+textarea {
+  outline: none; }
+
+/* Internet Explorer 10-11 */
+.frontal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 6vmin;
+  text-align: center;
+  text-shadow: 2px 2px 10px #666; }
+
+.red {
+  color: red; }
+
+.frontal,
+.animacion__capa1,
+.animacion__capa2,
+.animacion__capa3 {
+  position: absolute;
+  z-index: 0; }
+
+.animacion__capa1 {
+  animation-name: toMove;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  filter: blur(1.5px);
+  margin-left: 60%; }
+
+pre {
+  color: #a0a0a0; }
+
+.animacion__capa2 {
+  animation-name: toMove;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  filter: blur(1.5px);
+  color: #b0b0b0;
+  margin-left: 45%; }
+
+.animacion__capa3 {
+  animation-name: toMove;
+  animation-duration: 200s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  filter: blur(1.5px);
+  color: #BCBCBC;
+  margin-left: 30%; }
+
+@keyframes toMove {
+  0% {
+    top: 0%; }
+  100% {
+    top: -200%; } }
+.degradado {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(transparent 0%, white 30%);
+  z-index: 0; }
+
+.eloy,
+.clemente {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15vmin;
+  color: #000;
+  line-height: 15vmin;
+  text-shadow: 0 5px 20px #000;
+  z-index: 1000; }
+
+.eloy {
+  margin-left: 2vmin; }
+
+.clemente {
+  line-height: 6vmin;
+  margin-left: 1.25vmin; }
+
+.proyectos__container {
+  width: 100%;
+  position: absolute;
+  top: 26vmin;
+  left: 0;
+  padding-left: 3vmin;
+  padding-right: 3vmin;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all, .3s; }
+  @media (max-width: 700px) {
+    .proyectos__container {
+      top: 38vmin; } }
+
+.proyectos__titulo {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 6.5px;
+  font-size: 20px;
+  color: #596EDE;
+  color: #FF5A80;
+  color: #666;
+  margin-bottom: 100px;
+  transition: all, .3s; }
+  @media (max-width: 700px) {
+    .proyectos__titulo {
+      text-align: center;
+      margin-bottom: 40px;
+      letter-spacing: 4px; } }
+
+.proyectos__bloque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 10px;
+  margin-bottom: 80px; }
+  @media (max-width: 700px) {
+    .proyectos__bloque {
+      flex-wrap: wrap;
+      justify-content: center; } }
+
+.proyectos__imagen {
+  min-width: 250px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all, .3s; }
+  .proyectos__imagen:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
+
+.proyectos__imagen--abc {
+  background-image: url("../img/cinesabc.jpg"); }
+
+.proyectos__imagen--siberia {
+  background-image: url("../img/siberia.jpg"); }
+
+.proyectos__imagen--puzzle {
+  background-image: url("../img/puzzle.jpg"); }
+
+.proyectos__imagen--minusval {
+  background-image: url("../img/minusval.jpg"); }
+
+.proyectos__imagen--agenda {
+  background-image: url("../img/agenda.jpg"); }
+
+.proyectos__imagen--saned {
+  background-image: url("../img/saned.jpg"); }
+
+.proyectos__imagen--british {
+  background-image: url("../img/british.jpg"); }
+
+.proyectos__imagen--zapa {
+  background-image: url("../img/zapa.jpg"); }
+
+.proyectos__imagen--dacai {
+  background-image: url("../img/dacai.jpg"); }
+
+.proyectos__texto {
+  width: 100%;
+  padding-left: 20px; }
+  @media (max-width: 700px) {
+    .proyectos__texto {
+      padding-left: 0; } }
+
+.proyectos__nombre {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #596EDE;
+  margin-bottom: 10px; }
+  @media (max-width: 700px) {
+    .proyectos__nombre {
+      margin-top: 20px;
+      text-align: center; } }
+
+.proyectos__descripcion {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  transition: all, 1s; }
+  @media (max-width: 700px) {
+    .proyectos__descripcion {
+      text-align: center; } }
+
+/*# sourceMappingURL=styles.css.map */
