@@ -79,7 +79,7 @@ pre {
   position: fixed;
   top: 100%;
   left: 0;
-  background: linear-gradient(transparent 0%, white 30%);
+  background: linear-gradient(transparent 0%, white 29%);
   z-index: 0;
   transition: all, 3s; }
 
@@ -151,7 +151,7 @@ pre {
   opacity: 0; }
   @media (max-width: 700px) {
     .opacidad-subtitulo {
-      font-size: 18px;
+      font-size: 19px;
       letter-spacing: 5px; } }
 
 .proyectos__bloque {

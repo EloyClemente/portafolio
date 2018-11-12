@@ -19,11 +19,22 @@ function mostrarLetras() // MOSTRAR ELOY CLEMENTE
 		if(i == 12)
 		{
 			clearInterval(iniciar)	
+
+			setTimeout(function()
+			{
+				mostrarSubtitulo()
+			}, 1000)
 		}
 	}, 200)
 	
 }
-window.addEventListener('load', mostrarLetras)
+window.addEventListener('load', function()
+{
+	setTimeout(function()
+	{
+		mostrarLetras()
+	}, 1000)
+})
 
 
 
@@ -43,16 +54,10 @@ function mostrarSubtitulo() // MOSTRAR SUBTITULO
 		if(x == 33)
 		{
 			clearInterval(iniciar)	
+			moverDegradado()
 		}
 	}, 30)
 }
-window.addEventListener('load', function()
-{
-	setTimeout(function()
-	{
-		mostrarSubtitulo()
-	}, 3100)
-})
 
 
 
@@ -60,12 +65,14 @@ window.addEventListener('load', function()
 
 function moverDegradado() // MOVER DEGRADADO
 {
+	degradado.style.top = '0%'
+
 	setTimeout(function()
 	{
-		degradado.style.top = '0%'
-	}, 3500)
+		mostrarProyectos()
+	}, 3000)
 }
-window.addEventListener('load', moverDegradado)
+
 
 
 
@@ -84,10 +91,7 @@ function mostrarProyectos() // MOSTRAR PROYECTOS
 		}
 	}, 600)
 }
-window.addEventListener('load', function()
-{
-	setTimeout(function()
-	{
-		mostrarProyectos()
-	}, 7000)
-})
+// window.addEventListener('load', function()
+// {
+	
+// })
