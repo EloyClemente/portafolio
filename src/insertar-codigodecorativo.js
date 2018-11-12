@@ -27,6 +27,15 @@ capa3.appendChild(insertarDecoracion.insertarCodigo(11))
 
 
 
+setTimeout(function() // RETRASO EN MOSTRAR EL CÓDIGO DECORATIVO
+{
+	capa1.style.opacity = '1'
+	capa2.style.opacity = '1'
+	capa3.style.opacity = '1'
+}, 6500)
+
+
+
 
 // RESPONSIVE
 //...............................................
