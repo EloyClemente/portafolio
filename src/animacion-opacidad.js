@@ -44,7 +44,7 @@ function mostrarSubtitulo() // MOSTRAR SUBTITULO
 		{
 			clearInterval(iniciar)	
 		}
-	}, 20)
+	}, 30)
 }
 window.addEventListener('load', function()
 {
@@ -89,5 +89,5 @@ window.addEventListener('load', function()
 	setTimeout(function()
 	{
 		mostrarProyectos()
-	}, 7500)
+	}, 7000)
 })
