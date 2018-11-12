@@ -3,6 +3,9 @@ var opacidadLetras = document.getElementsByClassName('animacion-opacidad')
 var opacidadSubtitulo = document.getElementsByClassName('opacidad-subtitulo')
 var proyectosBloque = document.getElementsByClassName('proyectos__bloque')
 var degradado = document.getElementById('degradado')
+var capa1 = document.getElementById('animacion__capa1')
+var capa2 = document.getElementById('animacion__capa2')
+var capa3 = document.getElementById('animacion__capa3')
 var i = 0
 var x = 0
 var z = 0
@@ -69,10 +72,25 @@ function moverDegradado() // MOVER DEGRADADO
 
 	setTimeout(function()
 	{
-		mostrarProyectos()
-	}, 3000)
+		mostrarCodigoDecorativo()
+
+		setTimeout(function()
+		{
+			mostrarProyectos()
+		}, 1000)
+		
+	}, 2500)
 }
 
+
+
+
+function mostrarCodigoDecorativo() // MOSTRAR CODIGO DECORATIVO
+{
+	capa1.style.opacity = '1'
+	capa2.style.opacity = '1'
+	capa3.style.opacity = '1'
+}
 
 
 
@@ -91,7 +109,8 @@ function mostrarProyectos() // MOSTRAR PROYECTOS
 		}
 	}, 600)
 }
-// window.addEventListener('load', function()
-// {
-	
-// })
+
+
+
+
+
