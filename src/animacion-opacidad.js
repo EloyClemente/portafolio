@@ -71,7 +71,7 @@ function moverDegradado() // MOVER DEGRADADO
 	tiempo = 2000
 	
 	else
-	tiempo = 1000
+	tiempo = 500
 	
 
 
