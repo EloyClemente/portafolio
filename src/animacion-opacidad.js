@@ -62,7 +62,18 @@ function mostrarSubtitulo() // MOSTRAR SUBTITULO
 
 function moverDegradado() // MOVER DEGRADADO
 {
+	var tiempo
+
 	degradado.style.top = '0%'
+
+
+	if(window.innerWidth < 500)
+	tiempo = 2000
+	
+	else
+	tiempo = 1000
+	
+
 
 	setTimeout(function()
 	{
@@ -73,7 +84,7 @@ function moverDegradado() // MOVER DEGRADADO
 			mostrarProyectos()
 		}, 500)
 		
-	}, 2000)
+	}, tiempo)
 }
 
 
