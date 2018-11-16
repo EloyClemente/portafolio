@@ -71,17 +71,17 @@ function moverDegradado() // MOVER DEGRADADO
 	tiempo = 2000
 	
 	else
-	tiempo = 500
+	tiempo = 10
 	
 
 
 	setTimeout(function()
 	{
-		mostrarCodigoDecorativo()
+		mostrarCodigoDecorativo() // MOSTRAR CÓDIGO DECORATIVO
 
 		setTimeout(function()
 		{
-			mostrarProyectos()
+			mostrarProyectos() // MOSTRAR PROYECTOS
 		}, 500)
 		
 	}, tiempo)
