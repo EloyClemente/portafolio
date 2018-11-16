@@ -31,13 +31,7 @@ function mostrarLetras() // MOSTRAR ELOY CLEMENTE
 	}, 200)
 	
 }
-window.addEventListener('load', function()
-{
-	setTimeout(function()
-	{
-		mostrarLetras()
-	}, 1000)
-})
+window.addEventListener('load', mostrarLetras)
 
 
 
@@ -79,7 +73,7 @@ function moverDegradado() // MOVER DEGRADADO
 			mostrarProyectos()
 		}, 1000)
 		
-	}, 2500)
+	}, 2000)
 }
 
 
