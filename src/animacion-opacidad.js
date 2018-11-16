@@ -71,7 +71,7 @@ function moverDegradado() // MOVER DEGRADADO
 		setTimeout(function()
 		{
 			mostrarProyectos()
-		}, 1000)
+		}, 500)
 		
 	}, 2000)
 }
