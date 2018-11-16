@@ -26,7 +26,7 @@ function mostrarLetras() // MOSTRAR ELOY CLEMENTE
 			setTimeout(function()
 			{
 				mostrarSubtitulo()
-			}, 1000)
+			}, 800)
 		}
 	}, 200)
 	
@@ -62,16 +62,23 @@ function mostrarSubtitulo() // MOSTRAR SUBTITULO
 
 function moverDegradado() // MOVER DEGRADADO
 {
-	var tiempo
+	var tiempoCodigo
+	var tiempoProyectos
 
 	degradado.style.top = '0%'
 
 
-	if(window.innerWidth < 500)
-	tiempo = 2000
-	
+	if(window.innerWidth > 500)
+	{
+		tiempoCodigo = 1000
+		tiempoProyectos = 1000
+	}
 	else
-	tiempo = 10
+	{
+		tiempoCodigo = 500
+		tiempoProyectos = 500
+	}
+	
 	
 
 
@@ -82,9 +89,9 @@ function moverDegradado() // MOVER DEGRADADO
 		setTimeout(function()
 		{
 			mostrarProyectos() // MOSTRAR PROYECTOS
-		}, 500)
+		}, tiempoProyectos)
 		
-	}, tiempo)
+	}, tiempoCodigo)
 }
 
 
