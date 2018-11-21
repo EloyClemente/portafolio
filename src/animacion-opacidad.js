@@ -115,7 +115,7 @@ function mostrarProyectos() // MOSTRAR PROYECTOS
 		proyectosBloque[z].style.opacity = '1'
 		z++
 
-		if(z == proyectosBloque.length - 1)
+		if(z == proyectosBloque.length)
 		{
 			clearInterval(iniciar)	
 		}
